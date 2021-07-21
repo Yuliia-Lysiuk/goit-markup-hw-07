@@ -1,0 +1,30 @@
+/* Client */
+.client__list {
+  display: flex;
+}
+.client__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-icon-color);
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}
+.client__item:not(:last-child) {
+  margin-right: 30px;
+}
+.client__icon {
+  fill: var(--social-icon-color);
+
+  .client__link:hover &,
+  .client__link:focus & {
+    fill: var(--accent-color);
+  }
+}

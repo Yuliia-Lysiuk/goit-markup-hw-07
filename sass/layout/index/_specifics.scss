@@ -1,0 +1,21 @@
+/* Our specifics */
+
+.specifics {
+  padding-top: 51px;
+}
+.specifics__item {
+  width: 270px;
+}
+.specifics__icon {
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--third-bg-color);
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.specifics__text {
+  line-height: 1.7;
+}
