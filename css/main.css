@@ -63,6 +63,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul,
@@ -238,7 +239,7 @@ a {
   color: var(--main-text-color);
 }
 
-.box-form__input {
+.modal-form__box {
   display: block;
   position: relative;
   margin-top: 4px;
@@ -363,8 +364,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 /* логотип */
@@ -389,17 +388,15 @@ a {
   justify-content: space-between;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
-
+.nav,
 .menu-connect {
   display: flex;
   align-items: center;
 }
 
 .main-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: block;
   font-weight: 500;
   line-height: 1.14;
@@ -426,8 +423,12 @@ a {
   height: 4px;
   width: 100%;
   background-color: var(--accent-color);
-  top: 45px;
+  bottom: -1px;
   border-radius: 2px;
+}
+
+.menu-connect__list:not(:last-child) {
+  margin-right: 50px;
 }
 
 .menu-connect__link {
@@ -437,10 +438,6 @@ a {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   align-items: center;
-}
-
-.menu-connect__link:nth-child(1) {
-  margin-right: 50px;
 }
 
 .menu-connect__icon {
@@ -505,10 +502,6 @@ a {
 }
 
 /* Our specifics */
-.specifics {
-  padding-top: 51px;
-}
-
 .specifics__item {
   width: 270px;
 }
@@ -525,7 +518,7 @@ a {
 }
 
 .specifics__text {
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .work {
@@ -593,7 +586,7 @@ a {
 }
 
 /* Client */
-.client__list {
+.client {
   display: flex;
 }
 
@@ -679,23 +672,24 @@ a {
   margin-left: 70px;
 }
 
-.footer__menu-social-networks {
+.menu-social-networks_theme_dark {
   display: flex;
+  padding: 0;
 }
 
-.footer__menu-social-networks .menu-social-networks__icon {
+.menu-social-networks_theme_dark .menu-social-networks__icon {
   fill: var(--main-bg-color);
 }
 
-.footer__menu-social-networks .menu-social-networks__link {
+.menu-social-networks_theme_dark .menu-social-networks__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer__menu-social-networks .menu-social-networks__link:hover, .footer__menu-social-networks .menu-social-networks__link:focus {
+.menu-social-networks_theme_dark .menu-social-networks__link:hover, .menu-social-networks_theme_dark .menu-social-networks__link:focus {
   background-color: var(--accent-color);
 }
 
-.conteiner-footer-conect {
+.footer-conect {
   margin-left: 93px;
 }
 

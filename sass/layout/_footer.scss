@@ -47,8 +47,9 @@
 .footer__social-conteiner {
   margin-left: 70px;
 }
-.footer__menu-social-networks {
+.menu-social-networks_theme_dark {
   display: flex;
+  padding: 0;
 
   & .menu-social-networks__icon {
     fill: var(--main-bg-color);
@@ -63,7 +64,7 @@
   }
 }
 
-.conteiner-footer-conect {
+.footer-conect {
   margin-left: 93px;
 }
 .footer-conect__input {
